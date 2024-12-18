@@ -63,7 +63,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 ```
-membuat file index.js dan mengisikan konfigurasinya untuk menampilkan ke we
+membuat file index.js dan mengisikan konfigurasinya untuk menampilkan ke browser
 
 ```bash
 node index.js
@@ -126,3 +126,47 @@ perintah untuk menjalankan python, sekrang kita buka browser dan akser ip kita d
 
 
 # Deploy Golang
+## Konfigurasi
+intsall golang terlebih dahulu
+```bash
+wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
+```
+```bash
+ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
+```
+menggunakan sudo su bagian ini
+```bash
+export PATH=$PATH:/usr/local/go/bin
+```
+
+```bash
+go version
+```
+perintah untuk cek versi golang
+
+```bash
+nano index.go
+```
+```bash
+package main
+import "fmt"
+func main() {
+    fmt.Println("Hello TeguhGo!")
+}
+```
+buat file index.go dan konfigurasinya scriptnya
+
+```bash
+go run index.go
+```
+perintah untuk menjalankannya
+
+```bash
+go build index.go
+```
+atau bisa di build menjadi aplikasi
+
+```bash
+./index
+```
+maka aplikasi sudah jadi dan bisa untuk menjalannya
