@@ -49,9 +49,9 @@ cek konfigurasi nginx sukses atau masih terdapat error
 ```bash
 sudo nano /etc/hosts
 ```
-di locakserver, tambahkan ip web server dan domain sementara agar terbaca ketika dijalankan. Selanjutnya cek teguhjr.xyz menggunakan browser
+di locakserver, tambahkan ip web server dan domain `teguhjr.xyz` tadi agar terbaca ketika dijalankan. Selanjutnya cek `teguhjr.xyz` menggunakan browser
 
 ```bash
-sudo systemctl enable nginx
+sudo systemctl reload nginx
 ```
 reload jika belum terbaca
