@@ -142,6 +142,15 @@ python3 index.py
 ```
 perintah untuk menjalankan python, sekrang kita buka browser dan akser ip kita dengan port 5000
 
+```bash
+pm2 start index.py
+```
+menjalankan aplikasi python di background
+
+```bash
+pm2 stop
+```
+menghentikan aplikasi berjalan di background
 
 
 
