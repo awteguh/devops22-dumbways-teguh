@@ -70,6 +70,26 @@ node index.js
 ```
 untuk menjalankan aplikasi yang kita buat, sekarang kita buka browser kita akses ip kita dengan port 3000
 
+## PM2
+```
+npm install -g pm2
+```
+install pm2 terlebih dahulu
+
+```bash
+pm2 start npm -- start
+```
+menjalankan paket pm2
+
+```bash
+pm2 start index.js
+```
+menjalankan aplikasi nodejs agar berjalan di background
+
+```bash
+pm2 stop index.js
+```
+untuk menghentikan aplikasi agar tidak berjalan di background
 
 
 
